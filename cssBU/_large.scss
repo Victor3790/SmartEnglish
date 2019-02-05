@@ -1,0 +1,22 @@
+@include media-breakpoint-up(lg) {
+  .certImg{
+    width: 85%;
+  }
+
+  #menu{
+    div{
+      div{
+        align-items: center;
+      }
+    }
+  }
+
+  #hero{
+    height: calc(100vh - 167px);
+    margin-top: 167px;
+  }
+
+  #gMap{
+    background-image: url('../images/mapLarge.jpg');
+  }
+}

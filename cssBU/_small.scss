@@ -1,0 +1,33 @@
+@include media-breakpoint-up(sm){
+
+  .smallMenu{
+    height: 0;
+  }
+
+  .certImg{
+    width: 60%;
+  }
+
+  #menu{
+    img{
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    ul{
+      margin: 10px 0;
+      display: block;
+    }
+  }
+
+  #smallMenuIcon{
+    display: none;
+  }
+
+  #hero{
+    background-image: url("../images/curso-Ingles-Grande.jpg");
+    height: calc(100vh - 235px);
+    margin-top: 235px;
+  }
+
+}

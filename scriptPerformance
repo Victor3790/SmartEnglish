@@ -1,0 +1,16 @@
+Victor vs jquery
+
+parameters: mouse scroll, menu smooth scroll
+
+Victor:
+mouse scroll: 1.8999999992956873 ms
+menu smooth scroll: 1.8000000000029104 ms
+
+jquery:
+mouse scroll: 2.599999999802094 ms
+menu smooth scroll: 3.500000000713044 ms
+
+combination:
+mouse scroll: 1.8000000018218998 ms
+menu smooth scroll:1.8000000018218998 ms
+

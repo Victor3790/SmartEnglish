@@ -1,0 +1,9 @@
+@include media-breakpoint-up(xl) {
+  .certImg{
+    width: 70%;
+  }
+
+  #gMap{
+    background-image: url('../images/mapXL.jpg');
+  }
+}

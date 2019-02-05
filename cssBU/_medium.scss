@@ -1,0 +1,31 @@
+@include media-breakpoint-up(md) {
+
+  .certImg{
+    width: 45%;
+  }
+
+  #phoneAddressBar{
+    div{
+      div{
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  #hero{
+    height: calc(100vh - 211px);
+    margin-top: 211px;
+  }
+
+  #system{
+    background-image: url("../images/blackboardMedium.jpg");
+  }
+
+  #assets,#system,#cert,#contact{
+    padding: 8% 0;
+  }
+
+  #gMap{
+    background-image: url('../images/mapMedium.jpg');
+  }
+}
