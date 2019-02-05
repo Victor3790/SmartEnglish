@@ -87,6 +87,23 @@ footer{
   font-family: sans-serif;
 }
 
+.fullScreenMap{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 0;
+  z-index: 101;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapSection{
+  width: 90%;
+  height: 80%;
+}
+
 #fixed{
   width: 100%;
   position: fixed;
@@ -145,7 +162,7 @@ footer{
 .smallMenu{
   background-color: $black;
   width: 0;
-  height: 100vh;
+  height: 0;
   overflow: hidden;
   transition: max-width .1s;
   ul{
@@ -216,10 +233,22 @@ footer{
   position: fixed;
   bottom: 2%;
   right: 2%;
-  z-index: 99999;
+  z-index: 100;
   img{
     width: 50px;
     height: 50px;
+  }
+}
+
+#close{
+  display: none;
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  z-index: 102;
+  img{
+    width: 40px;
+    height: 40px;
   }
 }
 

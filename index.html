@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Cursos de inglés personalizados.
                                    La mejor escuela de inglés en Texcoco de Mora.">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOdm3UDTlYdMPSRQQmc2_ja2fMnJPWuEA&callback=initMap"
+          async defer></script>
   <link rel="stylesheet" href="css/main.css">
   <title>Smart English | Escuela de inglés en Texcoco.</title>
 </head>
@@ -213,7 +215,7 @@
       <div class="row">
         <div class="col">
           <div id="gMap">
-            <div class="boton">
+            <div id="mapButton" class="boton">
               <h3>Ver ubicación en Google Maps</h3>
             </div>
           </div>
@@ -224,6 +226,13 @@
 
   <div id="top">
     <img src="images/top.png" alt="Inicio de página.">
+  </div>
+
+  <div class="fullScreenMap">
+    <div id="close">
+      <img src="images/cross.png" alt="Cerrar mapa Escuela de ingles en Texcoco.">
+    </div>
+    <div id="showMap" class="mapSection"></div>
   </div>
 
    <script
