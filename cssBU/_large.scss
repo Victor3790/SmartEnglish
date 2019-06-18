@@ -1,4 +1,8 @@
 @include media-breakpoint-up(lg) {
+  .heroMessage{
+    padding: 3%;
+  }
+
   .certImg{
     width: 85%;
   }
