@@ -95,6 +95,8 @@ $(document).ready(function(){
     },1000, function(){
       $('#close').show('slow');
     });
+
+    ga('send', 'event', 'Map', 'view');
   });
 
   //Close the map
