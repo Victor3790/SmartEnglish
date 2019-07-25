@@ -1,0 +1,275 @@
+$green: #8fc84b;
+$black: #000;
+$white: #fff;
+$messageTextColor: #212529;
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/grid";
+
+body{
+  min-width: 360px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: $white;
+}
+
+p,h1,h2,h3{
+  margin: 0;
+  text-align: center;
+}
+
+a{
+  color: $white;
+}
+
+a:hover{
+  text-decoration: none;
+  color: $white;
+}
+
+ul{
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+img{
+  display: block;
+}
+
+footer{
+  padding: 3% 0;
+  background-color: $black;
+  margin-top: 2%;
+}
+
+.greenContainer{
+  background: $green;
+}
+
+.heroMessage{
+  background-color: rgba(255,255,255,0.80);
+  color: $messageTextColor;
+  margin: 0 auto;
+  padding: 5%;
+  h1, h2, h3{
+    margin-bottom: 2%;
+  }
+}
+
+.certImg{
+  width: 70%;
+}
+
+.boton{
+  border-radius: 5px;
+  background-color: #469fd6;
+  box-shadow:3px 3px 4px grey;
+  color: $white;
+}
+
+.centerImg{
+  margin: 0 auto;
+}
+
+.active{
+  border-bottom: 3px solid $green;
+}
+
+.wf-loading{
+  font-family: sans-serif;
+}
+
+.fullScreenMap{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 0;
+  z-index: 101;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapSection{
+  width: 90%;
+  height: 80%;
+}
+
+#fixed{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  min-width: 360px;
+}
+
+#phoneAddressBar{
+  padding: 5px 0;
+  div{
+    div{
+      justify-content: space-around;
+      div{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  img{
+    margin-right: 10px;
+    float: left;
+  }
+
+  a{
+    float: left;
+  }
+}
+
+#menu{
+  background-color: $black;
+  padding: 10px 0;
+  color: $white;
+  img{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  ul{
+    display: none;
+  }
+}
+
+#smallMenuIcon{
+  position: fixed;
+  top: 145px;
+  z-index: 100;
+  div{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+}
+
+.smallMenu{
+  background-color: $black;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: max-width .1s;
+  z-index: 101;
+  ul{
+    display: flex;
+    flex-direction: column;
+    li{
+      width: 100%;
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+}
+
+#hero{
+  min-height: 500px;
+  height: calc(100vh - 187px);
+  max-height: 900px;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/curso-Ingles-Chica.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 187px;
+}
+
+#assets{
+  padding: 15% 0;
+  img{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+}
+
+#system{
+  padding: 15% 0;
+  background-image: url("../images/blackboardSmall.jpg");
+  background-size: cover;
+  background-position: top;
+  h3{
+    margin: 50px 0;
+  }
+}
+
+#cert{
+  padding: 15% 0;
+  color: $messageTextColor;
+  h2{
+    margin-bottom: 30px;
+  }
+  p{
+    margin-bottom: 30px;
+  }
+}
+
+#contact{
+  padding: 15% 0;
+  margin-top: 2%;
+  h2{
+    margin-bottom: 30px;
+  }
+  p{
+    margin-bottom: 30px;
+  }
+}
+
+#top{
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 100;
+  cursor: pointer;
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#close{
+  display: none;
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  z-index: 102;
+  cursor: pointer;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#gMap{
+  padding: 25% 7%;
+  background-image: url('../images/mapSmall.jpg');
+  background-repeat: no-repeat;
+  h3{
+    padding: 20px 0;
+    cursor: pointer;
+  }
+}
+
+@import "small";
+@import "medium";
+@import "large";
+@import "xLarge";
